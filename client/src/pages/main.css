@@ -1,0 +1,66 @@
+/* Atividade: Aplicar identidade visual
+*/
+.grid-container {
+  display: grid;
+  height: 100vh; /* Ocupa a altura total da tela */
+  gap: 10px; /* Espaço entre os elementos */
+  
+  /* Definindo a estrutura de colunas e linhas */
+  grid-template-columns: 200px 1fr; /* Sidebar fixa, main fluido */
+  grid-template-rows: 60px 1fr; /* Header fixo, conteúdo flexível */
+  
+  /* Desenhando o layout com 'grid-template-areas' */
+  grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+}
+
+/* Posicionando os elementos */
+.header { 
+  grid-area: header; 
+  background-color: #045e79; 
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap:15px;
+  padding: 15px;
+}
+.sidebar { grid-area: sidebar; background-color: #e6b029; }
+.content { 
+  grid-area: main; 
+  background-color: #4f1f0b; 
+  padding: 20px;
+  
+  /* Aninhamento: Fazendo o main ser um grid para os posts */
+  display: grid;
+  grid-template-columns: repeat(auto-fill minmax(700px, 1fr));
+  gap: 15px;
+  align-content: start; /* Alinha posts no topo */
+}
+
+/* Estilo para os posts dentro da .content */
+.post {
+  background-color: #045e79;
+  border: 1px solid #c4202b;
+  height: 150px; /* Altura fixa ou automática */
+
+}
+
+.PopUp{
+  position: fixed;
+  left: 30%;
+  top: 10%;
+  width: 40%;
+  border: 2px solid black;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4d9bc;
+
+}
+
+.inputPopup{
+  width: 300px;
+}

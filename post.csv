@@ -1,0 +1,5 @@
+﻿ID,titulo,texto,curtidas,minhaCurtida,userID
+1,Primeiros passos com Node.js e ES Modules,Aprenda como configurar o type: module no seu package.json e usar imports nativos.,42,True,101
+2,Por que usar Sequelize em projetos Node?,O Sequelize facilita muito a abstração de bancos relacionais como PostgreSQL e MySQL.,128,False,102
+3,Boas práticas de segurança em APIs REST,Criptografia de senhas com bcrypt e proteção de rotas usando tokens JWT.,85,True,101
+4,Dicas de performance no PostgreSQL,Como criar índices eficientes e analisar queries lentas no seu banco de dados.,19,False,105
